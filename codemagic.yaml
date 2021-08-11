@@ -76,7 +76,7 @@ workflows:
         react-native bundle --entry-file='index.js' --bundle-output='./ios/main.jsbundle' --dev=false --platform='ios'
         # react-native bundle --entry-file='index.js' --bundle-output='./ios/app/main.jsbundle' --dev=false --platform='ios' --assets-dest='./ios'
         ls
-        xcodebuild build -workspace "$XCODE_WORKSPACE.xcworkspace" -scheme "$XCODE_SCHEME" CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO CODE_SIGNING_ALLOWED=NO
+        # xcodebuild build -workspace "$XCODE_WORKSPACE.xcworkspace" -scheme "$XCODE_SCHEME" CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO CODE_SIGNING_ALLOWED=NO
         xcodebuild -sdk iphonesimulator -workspace "$XCODE_WORKSPACE.xcworkspace" -scheme "$XCODE_SCHEME" -configuration Debug
         fi
 
